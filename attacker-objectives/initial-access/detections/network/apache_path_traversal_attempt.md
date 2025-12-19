@@ -16,29 +16,40 @@ T1190 – Exploit Public-Facing Application
 
 ## What This Detection Claims
 If this detection fires, it indicates that:
+
 - Network traffic originating from an external source was observed targeting an internal, public-facing resource
+  
 - The observed traffic contained URL path structures consistent with path traversal behavior
 
 ## What This Detection Does NOT Claim
 - The observed traffic was malicious in intent
+  
 - The path traversal behavior was successful
+  
 - The targeted system or application was compromised
 
 ## Required Telemetry
 - Network traffic inspection with visibility into inbound HTTP requests
+  
 - HTTP request parsing, including URL paths and request methods
+  
 - Sensor placement positioned to observe traffic targeting public-facing services
 
 ## Analyst Decisions Required
 - Is this traffic expected?
+  
 - Was the request accepted or otherwise handled by the application, as evidenced by observable responses?
 
 ## Confidence-Building Signals
 - The source IP address is associated with known scanning, exploitation, or adversary infrastructure based on threat intelligence
+  
 - The targeted service is known to be running a version affected by the referenced path traversal vulnerability, based on asset inventory or service fingerprinting
+  
 - Repeated or patterned path traversal requests are observed against the same resource or across multiple paths over a short time window
 
 ## Known Limitations
 - This detection does not confirm whether the request resulted in access to specific files or resources, as it is based on network request patterns rather than application-level outcomes.
+  
 - This detection may surface benign activity, such as vulnerability scanning, security testing, or misconfigured clients, that exhibits similar URL path manipulation patterns.
+  
 - This detection is dependent on network sensor placement and visibility; path traversal attempts that bypass inspected network paths (e.g., direct cloud service access, encrypted traffic without inspection, or alternate ingress points) may not be observed.
