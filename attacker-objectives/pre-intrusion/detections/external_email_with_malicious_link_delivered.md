@@ -43,9 +43,9 @@ If this detection fires, it indicates that:
 
 
 ## Confidence-Building Signals
-- 
-- 
-- 
+- The domain referenced by the embedded hyperlink is associated with known malicious or suspicious activity based on domain reputation or threat intelligence
+- User interaction with the embedded hyperlink is observed following email delivery
+- The hyperlink was not rewritten or otherwise mitigated by email security controls prior to user interaction
 
 
 ## Known Limitations
