@@ -15,7 +15,9 @@ This detection surfaces network traffic exhibiting URL path structures consisten
 
 
 ## What This Detection Claims
-
+If this detection fires, it indicates that:
+- network traffic originating from an external source was observed targeting an internal, public-facing resource
+- the observed traffic contained URL path structures consistent with path traversal behavior
 
 ## What This Detection Does NOT Claim
 
