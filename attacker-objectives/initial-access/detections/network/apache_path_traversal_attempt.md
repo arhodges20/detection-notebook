@@ -30,7 +30,8 @@ If this detection fires, it indicates that:
 - Sensor placement positioned to observe traffic targeting public-facing services
 
 ## Analyst Decisions Required
-
+- Is this traffic expected?
+- Was the request accepted or otherwise handled by the application, as evidenced by observable responses?
 
 ## Confidence-Building Signals
 
