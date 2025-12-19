@@ -1,67 +1,44 @@
-# Detection: <Detection Name>
+# Detection: Name Here
+
+## Detection Summary
+Summary here
 
 ## ATT&CK Mapping
-- <Technique ID> – <Technique Name>
-- <Optional additional techniques>
-
----
+None  
+(Behavioral indicator only; requires additional correlation to support ATT&CK objective placement.)
 
 ## Attacker Behavior
-Attackers may perform <behavior> to:
 - 
+
+- 
+
+- 
+
+## What This Detection Claims
+If this detection fires, it indicates that:
 - 
 - 
 
-This activity is commonly observed during:
-- <Kill chain phase(s)>
-
-In this detection, the behavior is tracked as:
-- <Execution / Access / Discovery / Lateral Movement / Supporting signal>
-- <What this detection supports, not claims>
-
----
+## What This Detection Does NOT Claim
+- 
+- 
+- 
 
 ## Required Telemetry
-### <Platform / Data Source>
-- <Event type>
-  - <Event IDs or log types>
-- <Required logging or visibility assumptions>
-
----
-
-## Detection Hypothesis
-If an attacker is performing <behavior>, we expect to observe:
 - 
 - 
 - 
 
-Often characterized by:
-- <Contextual clues such as parent process, source IP, execution context>
+## Analyst Decisions Required
+- 
+- 
 
----
+## Confidence-Building Signals
+- 
+- 
+- 
 
-## Detection Logic (Generic)
-Trigger when:
-- <High-level condition>
-- <High-level condition>
-
-Avoids asserting:
-- <Intent>
-- <Outcome>
-
----
-
-## Example Sigma Logic (Simplified)
-
-```yaml
-title: <Detection Name>
-status: experimental
-logsource:
-  category: <category>
-  product: <platform>
-detection:
-  selection:
-    <Field>:
-      - <Value>
-  condition: selection
-level: <low|medium|high>
+## Known Limitations
+- 
+- 
+- 
