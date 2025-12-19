@@ -48,6 +48,8 @@ If this detection fires, it indicates that:
 
 ## Known Limitations
 - This detection does not examine or deobfuscate the JavaScript payload; it only identifies characteristics consistent with obfuscation
+  
 - Obfuscated JavaScript is frequently observed in legitimate web traffic, which may result in benign activity being surfaced
+  
 - This detection is dependent on network or proxy visibility and may miss obfuscated content delivered through encrypted or uninspected channels
 
