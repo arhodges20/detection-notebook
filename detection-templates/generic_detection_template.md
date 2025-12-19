@@ -4,8 +4,7 @@
 Summary here
 
 ## ATT&CK Mapping
-None  
-(Behavioral indicator only; requires additional correlation to support ATT&CK objective placement.)
+mapping here
 
 ## Attacker Behavior
 - 
