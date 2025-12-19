@@ -35,9 +35,10 @@ If this detection fires, it indicates that:
 - Association of observed web traffic with a client session or user context 
 
 ## Analyst Decisions Required
-- 
-- 
+- Is the observed obfuscated JavaScript expected for the destination or application?
 
+- Does this activity correlate with additional signals indicating exploit delivery or execution?
+  
 ## Confidence-Building Signals
 - 
 - 
