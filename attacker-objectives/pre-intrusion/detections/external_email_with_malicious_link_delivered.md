@@ -1,4 +1,4 @@
-# Detection: External Email with Malicious Link Delivered
+# Detection: External Email with External Link Delivered
 
 ## Detection Summary
 This detection surfaces external emails delivered to user inboxes that contain hyperlinks to external domains, which may represent a potential pathway to initial access, for analyst review.
