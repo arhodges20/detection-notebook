@@ -25,9 +25,6 @@ It focuses on **detection logic, assumptions, tradeoffs, and analyst decision-ma
   - analyst decision points
   - coverage considerations
 
-- `telemetry/` — notes on relevant log sources, schemas, and visibility constraints (planned)
-
-- `metrics/` — conceptual approaches to coverage and effectiveness tracking (planned)
 
 ---
 
