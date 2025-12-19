@@ -34,6 +34,8 @@ If this detection fires, it indicates that:
 - Was the request accepted or otherwise handled by the application, as evidenced by observable responses?
 
 ## Confidence-Building Signals
-
+- the source IP address is associated with known scanning, exploitation, or adversary infrastructure based on threat intelligence
+- the targeted service is known to be running a version affected by the referenced path traversal vulnerability, based on asset inventory or service fingerprinting
+- repeated or patterned path traversal requests are observed against the same resource or across multiple paths over a short time window
 
 ## Known Limitations
