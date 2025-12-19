@@ -20,7 +20,9 @@ If this detection fires, it indicates that:
 - the observed traffic contained URL path structures consistent with path traversal behavior
 
 ## What This Detection Does NOT Claim
-
+- the observed traffic was malicious in intent
+- the path traversal behavior was successful
+- the targeted system or application was compromised
 
 ## Required Telemetry
 
