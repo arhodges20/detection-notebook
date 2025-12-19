@@ -4,7 +4,7 @@
 This detection surfaces network traffic exhibiting URL path structures consistent with path traversal behavior, for analyst review.
 
 ## ATT&CK Mapping
-
+T1190 – Exploit Public-Facing Application
 
 ## Attacker Behavior
 - Attackers manipulate the URL structure of HTTP requests to influence how a server processes the request.
