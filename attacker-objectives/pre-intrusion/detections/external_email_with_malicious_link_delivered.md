@@ -16,8 +16,9 @@ None
 
 ## What This Detection Claims
 If this detection fires, it indicates that:
-- 
-- 
+- An external email was successfully delivered to a user’s inbox
+
+- The delivered email contained a hyperlink directing to an external domain
 
 
 ## What This Detection Does NOT Claim
