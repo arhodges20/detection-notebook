@@ -1,7 +1,7 @@
 # Detection: Apache HTTP Server Path Traversal Attempt
 
 ## Detection Summary
-
+This detection surfaces network traffic exhibiting URL path structures consistent with path traversal behavior, for analyst review.
 
 ## ATT&CK Mapping
 
