@@ -28,9 +28,11 @@ If this detection fires, it indicates that:
 - The client system was compromised as a result of this activity
 
 ## Required Telemetry
-- 
-- 
-- 
+- Network or proxy-level visibility into web traffic
+
+- Inspection or analysis capability for JavaScript content within web responses
+
+- Association of observed web traffic with a client session or user context 
 
 ## Analyst Decisions Required
 - 
