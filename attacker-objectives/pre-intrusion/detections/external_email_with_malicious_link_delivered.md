@@ -39,16 +39,21 @@ If this detection fires, it indicates that:
 
 ## Analyst Decisions Required
 - Is this email and its embedded external hyperlink expected for the recipient user or their role?
+  
 - Are the external hyperlinks benign or malicious?
 
 
 ## Confidence-Building Signals
 - The domain referenced by the embedded hyperlink is associated with known malicious or suspicious activity based on domain reputation or threat intelligence
+  
 - User interaction with the embedded hyperlink is observed following email delivery
+  
 - The hyperlink was not rewritten or otherwise mitigated by email security controls prior to user interaction
 
 
 ## Known Limitations
-- 
-- 
-- 
+- This detection does not analyze the content of the embedded hyperlink or the destination domain beyond its presence in the email
+  
+- External emails containing hyperlinks are common in legitimate business communications and may result in benign activity being surfaced
+  
+- This detection is limited to email delivery telemetry and does not confirm user interaction or downstream impact without additional correlated signals
