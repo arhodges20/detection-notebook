@@ -39,3 +39,6 @@ If this detection fires, it indicates that:
 - repeated or patterned path traversal requests are observed against the same resource or across multiple paths over a short time window
 
 ## Known Limitations
+- This detection does not confirm whether the request resulted in access to specific files or resources, as it is based on network request patterns rather than application-level outcomes.
+- This detection may surface benign activity, such as vulnerability scanning, security testing, or misconfigured clients, that exhibits similar URL path manipulation patterns.
+- This detection is dependent on network sensor placement and visibility; path traversal attempts that bypass inspected network paths (e.g., direct cloud service access, encrypted traffic without inspection, or alternate ingress points) may not be observed.
