@@ -25,7 +25,9 @@ If this detection fires, it indicates that:
 - the targeted system or application was compromised
 
 ## Required Telemetry
-
+- Network traffic inspection with visibility into inbound HTTP requests
+- HTTP request parsing, including URL paths and request methods
+- Sensor placement positioned to observe traffic targeting public-facing services
 
 ## Analyst Decisions Required
 
