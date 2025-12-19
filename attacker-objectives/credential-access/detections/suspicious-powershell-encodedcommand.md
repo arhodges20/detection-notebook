@@ -8,8 +8,9 @@ Attackers frequently use Base64-encoded PowerShell commands to:
 - Obfuscate intent
 - Evade simple string-based detections
 - Deliver payloads filelessly
+- Deliver or stage credential-theft tooling (e.g., Invoke-Mimikatz) using execution that enables credential access rather than being the objective itself.
 
-This is commonly observed during credential access, initial access staging, and post-exploitation.
+This is commonly observed during credential access, initial access staging, and post-exploitation; here it is tracked as an execution signal that supports the Credential Access objective.
 
 ---
 
@@ -57,4 +58,11 @@ detection:
       - '-enc'
   condition: selection
 level: medium
+
+---
+
+## Limitations / Blind Spots (linked to threat model assumptions)
+- Depends on threat model assumptions about telemetry availability (process creation logging and, ideally, PowerShell logging); without these, detection quality degrades.
+- Evasion via renamed binaries, Living-off-the-Land execution, or EDR bypass techniques aligns with threat-model blind spots; this rule will miss such cases.
+- This is a generic execution signal and not credential-theft-specific by itself; additional context is required to confirm Credential Access intent.
 
