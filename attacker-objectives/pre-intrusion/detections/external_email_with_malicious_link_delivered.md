@@ -8,7 +8,11 @@ None
 (Pre-Intrusion behavioral indicator; email delivery alone does not establish attacker access.)
 
 ## Attacker Behavior
+- Email links are commonly used by attackers to direct users to external infrastructure they control or have compromised.
 
+- Such links may be used to facilitate credential harvesting, session abuse, or delivery of additional content.
+
+- This activity is frequently observed as an early stage of intrusion campaigns.
 
 ## What This Detection Claims
 If this detection fires, it indicates that:
