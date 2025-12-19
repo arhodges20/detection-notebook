@@ -22,9 +22,11 @@ If this detection fires, it indicates that:
 
 
 ## What This Detection Does NOT Claim
-- 
-- 
-- 
+- The presence of the email indicates a user account compromise
+
+- The user interacted with the hyperlink contained in the email
+
+- Any credentials, sessions, or systems were accessed as a result of this email
 
 
 ## Required Telemetry
