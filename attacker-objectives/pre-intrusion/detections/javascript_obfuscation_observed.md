@@ -21,9 +21,11 @@ If this detection fires, it indicates that:
 - The obfuscated JavaScript was delivered to a client as part of a web session
 
 ## What This Detection Does NOT Claim
-- 
-- 
-- 
+- The observed JavaScript was malicious in intent
+
+- The JavaScript content was executed on the client
+
+- The client system was compromised as a result of this activity
 
 ## Required Telemetry
 - 
