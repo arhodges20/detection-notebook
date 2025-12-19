@@ -16,13 +16,13 @@ T1190 – Exploit Public-Facing Application
 
 ## What This Detection Claims
 If this detection fires, it indicates that:
-- network traffic originating from an external source was observed targeting an internal, public-facing resource
-- the observed traffic contained URL path structures consistent with path traversal behavior
+- Network traffic originating from an external source was observed targeting an internal, public-facing resource
+- The observed traffic contained URL path structures consistent with path traversal behavior
 
 ## What This Detection Does NOT Claim
-- the observed traffic was malicious in intent
-- the path traversal behavior was successful
-- the targeted system or application was compromised
+- The observed traffic was malicious in intent
+- The path traversal behavior was successful
+- The targeted system or application was compromised
 
 ## Required Telemetry
 - Network traffic inspection with visibility into inbound HTTP requests
@@ -34,9 +34,9 @@ If this detection fires, it indicates that:
 - Was the request accepted or otherwise handled by the application, as evidenced by observable responses?
 
 ## Confidence-Building Signals
-- the source IP address is associated with known scanning, exploitation, or adversary infrastructure based on threat intelligence
-- the targeted service is known to be running a version affected by the referenced path traversal vulnerability, based on asset inventory or service fingerprinting
-- repeated or patterned path traversal requests are observed against the same resource or across multiple paths over a short time window
+- The source IP address is associated with known scanning, exploitation, or adversary infrastructure based on threat intelligence
+- The targeted service is known to be running a version affected by the referenced path traversal vulnerability, based on asset inventory or service fingerprinting
+- Repeated or patterned path traversal requests are observed against the same resource or across multiple paths over a short time window
 
 ## Known Limitations
 - This detection does not confirm whether the request resulted in access to specific files or resources, as it is based on network request patterns rather than application-level outcomes.
