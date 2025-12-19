@@ -38,8 +38,8 @@ If this detection fires, it indicates that:
 
 
 ## Analyst Decisions Required
-- 
-- 
+- Is this email and its embedded external hyperlink expected for the recipient user or their role?
+- Are the external hyperlinks benign or malicious?
 
 
 ## Confidence-Building Signals
