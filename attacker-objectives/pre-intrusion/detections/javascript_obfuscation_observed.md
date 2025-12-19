@@ -40,9 +40,11 @@ If this detection fires, it indicates that:
 - Does this activity correlate with additional signals indicating exploit delivery or execution?
   
 ## Confidence-Building Signals
+- The destination IP or domain is associated with known malicious or suspicious infrastructure based on threat intelligence
 - 
+- Additional web activity such as redirects, exploit attempts, or staged content delivery is observed following the initial JavaScript response
 - 
-- 
+- Correlated endpoint or identity telemetry indicates anomalous behavior following the web session
 
 ## Known Limitations
 - 
