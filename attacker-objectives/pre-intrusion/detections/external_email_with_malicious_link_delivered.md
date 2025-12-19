@@ -30,9 +30,11 @@ If this detection fires, it indicates that:
 
 
 ## Required Telemetry
-- 
-- 
-- 
+- Email delivery telemetry indicating successful delivery to a user inbox
+
+- Visibility into email message metadata and content, including embedded hyperlinks
+
+- Association of the delivered email with a recipient user account
 
 
 ## Analyst Decisions Required
