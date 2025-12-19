@@ -16,8 +16,9 @@ None
 
 ## What This Detection Claims
 If this detection fires, it indicates that:
-- 
-- 
+- Obfuscated JavaScript content was observed in web traffic
+
+- The obfuscated JavaScript was delivered to a client as part of a web session
 
 ## What This Detection Does NOT Claim
 - 
